@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+<title>PR8-individual, Steven Mogensen 170170</title>
+  </head>
+  <body>
+    <section>
+      	<header id="mynavbar" class="navbar">
+			<div id="mySidenav" class="sidenav">
+  				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  				<a href="Home.html">Home</a>
+				<a href="Index.html">Profile</a>
+				<a href="About-me.html">About Me</a>
+  				<a href="#">Services</a>
+  				<a href="Portfolio.html">Portfolio</a>
+  				<a href="Contact.html">Contact</a>
+			</div>
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()" ><img class="hamburger" src="Images/Hamburger.png" width="30" height="30" alt=""/></span>
+			<span class="title">Creatives for you!</span>
+			<span class="profilepic"><img src="Images/2.jpg" width="55" height="50" alt=""/></span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+			
+	<style>
+.inv {
+    display: none;
+}
+    </style>
+			
+        </header>
+    </section>
+	  <container class="welcome-page">
+	  	<h1>Welcome!</h1>
+		<h3>Check out creatives in your neighbourhood</h3>
+		  
+		  <div>
+		  	<select id="target">
+            <option value="">Select...</option>
+            <option value="content_1">Photographers</option>
+            <option value="content_2">Videographers</option>
+            <option value="content_3">Drone Pilots</option>
+        <select>
+
+        <div id="content_1" class="inv">
+			<h1>Photographers</h1>
+				<img src="Images/2.jpg" class="profile-cover" style="width: 80px; height: 80px" alt="ProfilePhoto">
+					
+			<h2>Steven Mogensen</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+			<button onclick="myFunction()" id="myBtn">Read more</button>
+				<div>
+					<a class="hire" href="Contact.html">Hire Steven!</a>
+					<a class="hire" href="Portfolio.html">Portfolio</a>
+					</div>
+			</div>
+        <div id="content_2" class="inv">
+			<h1>Videographers</h1>
+				<img src="Images/videographer.jpg" class="profile-cover" style="width: 80px; height: 80px" alt="ProfilePhoto">
+					
+			<h2>Sharon Tate</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+			<button onclick="myFunction()" id="myBtn">Read more</button>
+				<div>
+					<a class="hire" href="Contact.html">Hire Steven!</a>
+					<a class="hire" href="Portfolio.html">Portfolio</a>
+					</div>
+			
+			</div>
+        <div id="content_3" class="inv">
+			<h1>Drone Pilot</h1>
+				<img src="Images/pilot-1812851_1280.jpg" class="profile-cover" style="width: 80px; height: 80px" alt="ProfilePhoto">
+					
+			<h2>Sully Sullenberger</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+			<button onclick="myFunction()" id="myBtn">Read more</button>
+				<div>
+					<a class="hire" href="Contact.html">Hire Steven!</a>
+					<a class="hire" href="Portfolio.html">Portfolio</a>
+					</div>
+			</div>
+
+        <script>
+            document
+                .getElementById('target')
+                .addEventListener('change', function () {
+                    'use strict';
+                    var vis = document.querySelector('.vis'),   
+                        target = document.getElementById(this.value);
+                    if (vis !== null) {
+                        vis.className = 'inv';
+                    }
+                    if (target !== null ) {
+                        target.className = 'vis';
+                    }
+            });
+        </script>
+		  </div>
+		
+		  
+		  </div>
+	  
+	  
+	  </container>
+<footer class="date-time">
+  <!-- #BeginDate format:Am1a -->April 3, 2020 2:55 PM<!-- #EndDate -->
+</footer>
+  <!-- Optional JavaScript -->
+	  <script src="js/custom-js.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+	
+  </body>
+</html>
